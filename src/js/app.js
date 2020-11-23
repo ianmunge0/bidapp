@@ -16,6 +16,11 @@ App = {
         petTemplate.find('.pet-location').text(data[i].location);
         petTemplate.find('.btn-adopt').attr('data-id', data[i].id);
 
+        if( i == 1){
+          console.log("data for i", data[i]);
+
+        }
+
         petsRow.append(petTemplate.html());
       }
     });
